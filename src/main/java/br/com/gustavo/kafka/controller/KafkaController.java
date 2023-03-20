@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/controller")
+@RequestMapping("/mycontroller")
 public class KafkaController {
     @Autowired
     private KafkaProducer kafkaProducer;
-    @PostMapping("/send")
+    @PostMapping("/send-message")
     public void sendMessage(@RequestBody Person person) {
         kafkaProducer.sendMessage(person);
     }
