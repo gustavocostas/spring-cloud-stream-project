@@ -16,8 +16,10 @@ public class FormattedEventProducer {
     private StreamBridge streamBridge;
 
     public void sendMessage(FakeEvent fakeEvent) {
-        FormattedEvent formatted = toFormattedEvent(fakeEvent);
-        streamBridge.send("topic-final", formatted);
-        log.info("Evento produzido: " + formatted.toString());
+        if (fakeEvent.getAction().equals("merge")) {
+            FormattedEvent formatted = toFormattedEvent(fakeEvent);
+            streamBridge.send("topic-final", formatted);
+            log.info("Evento produzido: " + formatted.toString());
+        }
     }
 }
