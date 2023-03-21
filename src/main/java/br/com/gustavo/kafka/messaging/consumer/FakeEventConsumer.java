@@ -1,7 +1,7 @@
-package br.com.gustavo.kafka.consumer;
+package br.com.gustavo.kafka.messaging.consumer;
 
-import br.com.gustavo.kafka.model.FakeEvent;
-import br.com.gustavo.kafka.producer.FormattedEventProducer;
+import br.com.gustavo.kafka.messaging.model.FakeEvent;
+import br.com.gustavo.kafka.messaging.producer.FormattedEventProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

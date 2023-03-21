@@ -1,4 +1,4 @@
-package br.com.gustavo.kafka.dto;
+package br.com.gustavo.kafka.messaging.dto;
 
 import lombok.*;
 
@@ -7,9 +7,10 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class FormattedEvent {
+public class FormattedEventDto {
     private String project;
     private String groupProject;
     private int files;
     private int commits;
+    private int modifiedLines;
 }

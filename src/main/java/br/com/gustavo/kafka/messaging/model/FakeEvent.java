@@ -1,4 +1,4 @@
-package br.com.gustavo.kafka.model;
+package br.com.gustavo.kafka.messaging.model;
 
 import lombok.*;
 
@@ -14,4 +14,10 @@ public class FakeEvent {
     private String group;
     private int files;
     private int commits;
+    private int addedLines;
+    private int removedLines;
+
+    public int returnModifiedLines() {
+        return this.addedLines + this.removedLines;
+    }
 }

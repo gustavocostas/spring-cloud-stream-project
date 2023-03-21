@@ -1,7 +1,7 @@
-package br.com.gustavo.kafka.service;
+package br.com.gustavo.kafka.messaging.service;
 
-import br.com.gustavo.kafka.model.FakeEvent;
-import br.com.gustavo.kafka.producer.FakeEventProducer;
+import br.com.gustavo.kafka.messaging.model.FakeEvent;
+import br.com.gustavo.kafka.messaging.producer.FakeEventProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

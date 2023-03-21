@@ -1,6 +1,6 @@
-package br.com.gustavo.kafka.producer;
+package br.com.gustavo.kafka.messaging.producer;
 
-import br.com.gustavo.kafka.model.FakeEvent;
+import br.com.gustavo.kafka.messaging.model.FakeEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Component;
