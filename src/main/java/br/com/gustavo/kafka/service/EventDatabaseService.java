@@ -30,8 +30,7 @@ public class EventDatabaseService {
     }
 
     private Integer calculateLines(List<EventDatbase> eventDatbases) {
-        return eventDatbases.isEmpty()
-                ? 0
+        return eventDatbases.isEmpty() ? 0
                 : eventDatbases.stream().map(EventDatbase::returnModifiedLines)
                 .reduce(0, Integer::sum) / 2;
     }
