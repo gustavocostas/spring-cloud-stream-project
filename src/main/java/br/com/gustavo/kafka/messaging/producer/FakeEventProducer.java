@@ -11,7 +11,7 @@ public class FakeEventProducer {
     private StreamBridge streamBridge;
 
     public void sendMessage(FakeEvent fakeEvent) {
-        streamBridge.send("topic-test", fakeEvent);
+        streamBridge.send("initial-topic", fakeEvent);
     }
 
 }
